@@ -25,7 +25,7 @@ utils =
       else
         {}
 
-class FactoryBoy
+class FactoryDog
   @utils = utils
   @defs = {}
   @define: (name, rule) ->
@@ -46,18 +46,18 @@ class FactoryBoy
           obj[k] = v
     obj
 
-module.exports = FactoryBoy
+module.exports = FactoryDog
 # index = 0
-# FactoryBoy.define 'user', {
+# FactoryDog.define 'user', {
   # prop: -> ++index
   # a: 'number'
   # b: 'string'
 # }
 
 # assert = require 'assert'
-# a = FactoryBoy.build 'user'
+# a = FactoryDog.build 'user'
 # assert.equal a.prop, 1
-# b = FactoryBoy.build 'user', prop: 'b'
+# b = FactoryDog.build 'user', prop: 'b'
 # assert.equal b.prop, 'b'
 
 # console.log a
